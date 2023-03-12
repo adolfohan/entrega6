@@ -1,0 +1,27 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>UserList</servlet-name>
+		<servlet-class>com.eduit.bootcamp.UserListServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserAdd</servlet-name>
+		<servlet-class>com.eduit.bootcamp.UserAddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserList</servlet-name>
+		<url-pattern>/user/list</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserAdd</servlet-name>
+		<url-pattern>/user/add</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
